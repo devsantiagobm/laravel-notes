@@ -30,7 +30,7 @@ $currentRoute = Route::current()->getName();
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-
+    <script src="{{ asset('js/components/header.js') }}" defer type="module"></script>
 
     @stack("head")
 
@@ -48,7 +48,6 @@ $currentRoute = Route::current()->getName();
 
         <nav>
             <ul class="header__nav">
-
                 @auth
                 @foreach($authLinks as $link)
                 <li>
@@ -73,6 +72,10 @@ $currentRoute = Route::current()->getName();
                 @endforeach
                 @endguest
             </ul>
+
+            <button class="header__toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
 
     </header>
