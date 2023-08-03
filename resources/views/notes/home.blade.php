@@ -59,11 +59,11 @@ $currentId = request()->route('id');
 
 
             <div class="note__column">
-                <a class="note__button" href="/notes/update/{{$note->id}}">
+                <a class="note__button" href="{{ route('form-edit-note', [$note->id]) }}">
                     <i class="fa-solid fa-pen"></i>
                 </a>
 
-                <a class="note__button" href="notes/delete/{{$note->id}}">
+                <a class="note__button" href="{{ route('delete-note', [$note->id]) }}">
                     <i class="fa-solid fa-trash"></i>
                 </a>
             </div>

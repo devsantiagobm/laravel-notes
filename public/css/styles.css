@@ -37,8 +37,9 @@ select {
 }
 
 .layout {
+    width: 100%;
     animation: show-in .7s ease;
-    padding: 0 var(--pages-padding);;
+    padding: 0 var(--pages-padding);
 }
 
 @keyframes show-in {
@@ -61,7 +62,7 @@ html {
 
 
 .form {
-    width: clamp(400px, 25vw, 550px);
+    width: clamp(550px, 30vw, 650px);
     margin: 10dvh auto;
     height: 70dvh;
     display: grid;
