@@ -2,7 +2,7 @@
 
 
 @section("content")
-<form action="{{ route('create-category') }}" method="POST" class="form layout">
+<form action="{{ route('create-category') }}" method="POST" class="form">
 
     <div class="form__box">
         <h1>Crear nueva categoría</h1>

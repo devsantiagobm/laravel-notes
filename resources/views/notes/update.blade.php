@@ -12,7 +12,7 @@ $initialOptionValue = 1;
 @endpush
 
 @section("content")
-<form action="{{ route('update-note', ['id' => $note->id]) }}" method="POST" class="form layout">
+<form action="{{ route('update-note', ['id' => $note->id]) }}" method="POST" class="form">
 
     <div class="form__box">
         <h1>Editar nota</h1>

@@ -2,7 +2,7 @@
 
 
 @section("content")
-<form action="{{ route('update-category', ['id' => $category->id] ) }}" method="POST" class="form layout">
+<form action="{{ route('update-category', ['id' => $category->id] ) }}" method="POST" class="form">
 
     <div class="form__box">
         <h1>Editar categoría</h1>

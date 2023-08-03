@@ -11,7 +11,7 @@ $initialOptionValue = 1;
 @endpush
 
 @section("content")
-<form action="{{ route('create-note') }}" method="POST" class="form layout">
+<form action="{{ route('create-note') }}" method="POST" class="form">
 
     <div class="form__box">
         <h1>Crear nueva nota</h1>
